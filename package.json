@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm install --prefix backend && npm install --prefix frontend",
-  "build": "npm install -g vite && cd frontend && npm run build",
+  
+  "postinstall": "npm install --prefix frontend && npm install --prefix backend",
+  "build": "NODE_ENV=development cd frontend && npm run build",
   "start": "npm run dev --prefix backend"
+
+
   },
   "keywords": [],
   "author": "",
